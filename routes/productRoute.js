@@ -6,10 +6,10 @@ const productRoute = Router();
 productRoute.get("/health", (req, res) => {
   controller.health(req, res);
 });
-productRoute.get("/produto", (req, res) => {
+productRoute.get("/get", (req, res) => {
   controller.getProduct(req, res);
 });
-productRoute.post("/produto", (req, res) => {
+productRoute.post("/post", (req, res) => {
   controller.postProduct(req, res);
 });
 
